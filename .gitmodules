@@ -1,0 +1,3 @@
+[submodule "extern/NGT"]
+	path = extern/NGT
+	url = https://github.com/yahoojapan/NGT
