@@ -14,7 +14,7 @@ from setuptools import find_packages
 
 setup(
     name="ngtpy",
-    version="0.1.0",
+    version="0.2.b0",
     description="ngt python",
     author="Yahoo! JAPAN research",
     packages=find_packages(where="src"),
