@@ -48,6 +48,10 @@ jobs:
       with:
         submodules: true
 
+    - name: Install libomp for macOS
+      if: runner.os == 'macOS'
+      run: brew install libomp
+
     - uses: pypa/cibuildwheel@v2.3.1
 
     - name: Verify clean directory
