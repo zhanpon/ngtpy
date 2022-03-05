@@ -13,4 +13,15 @@ build-backend = "setuptools.build_meta"
 profile = "black"
 
 [tool.cibuildwheel]
-build = ["cp39-manylinux_x86_64", "cp39-macosx_x86_64"]
+build = [
+    "cp36-manylinux_x86_64",
+    "cp36-macosx_x86_64",
+    "cp37-manylinux_x86_64",
+    "cp37-macosx_x86_64",
+    "cp38-manylinux_x86_64",
+    "cp38-macosx_x86_64",
+    "cp39-manylinux_x86_64",
+    "cp39-macosx_x86_64",
+    "cp310-manylinux_x86_64",
+    "cp310-macosx_x86_64",
+]
