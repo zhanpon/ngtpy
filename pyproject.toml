@@ -25,3 +25,6 @@ build = [
     "cp310-manylinux_x86_64",
     "cp310-macosx_x86_64",
 ]
+
+test-requires = "pytest"
+test-command = "pytest {project}/tests"

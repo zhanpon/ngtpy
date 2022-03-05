@@ -10,12 +10,6 @@ on:
     types:
       - published
 
-env:
-  CIBW_TEST_COMMAND: pytest {project}/tests
-  CIBW_TEST_EXTRAS: test
-  CIBW_ARCHS: auto64
-
-
 jobs:
   build_sdist:
     name: Build SDist
