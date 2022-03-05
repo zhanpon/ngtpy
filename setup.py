@@ -20,6 +20,7 @@ setup(
     packages=find_packages(where="src"),
     package_dir={"": "src"},
     cmake_install_dir="src/ngtpy",
+    cmake_args=["-DNGT_MARCH_NATIVE_DISABLED=ON", "-DNGT_AVX_DISABLED=ON"],
     include_package_data=True,
     extras_require={"test": ["pytest"]},
     python_requires=">=3.6",
