@@ -4,5 +4,5 @@ A source distribution of [ngtpy](https://github.com/yahoojapan/NGT/tree/master/p
 ## Installation
 This project is currently published to TestPyPI:
 ```
-$ python -m pip install --extra-index-url https://test.pypi.org/simple/ ngtpy
+python -m pip install --extra-index-url https://test.pypi.org/simple/ ngtpy
 ```
