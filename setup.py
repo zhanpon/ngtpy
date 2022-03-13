@@ -24,4 +24,16 @@ setup(
     extras_require={"test": ["pytest"]},
     python_requires=">=3.6",
     install_requires=["numpy"],
+    classifiers=[
+        "Development Status :: 2 - Pre-Alpha",
+        "Programming Language :: Python",
+        "Programming Language :: Python :: 3",
+        "Programming Language :: Python :: 3.6",
+        "Programming Language :: Python :: 3.7",
+        "Programming Language :: Python :: 3.8",
+        "Programming Language :: Python :: 3.9",
+        "Programming Language :: Python :: 3.10",
+        "Programming Language :: Python :: Implementation :: CPython",
+        "License :: OSI Approved :: Apache Software License",
+    ],
 )
