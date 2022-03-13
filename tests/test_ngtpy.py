@@ -5,7 +5,7 @@ import ngtpy
 
 def new_index(path, dimension):
     path_str = str(path)
-    index = ngtpy.create(path_str, dimension)
+    ngtpy.create(path_str, dimension)
     return ngtpy.Index(path_str)
 
 
