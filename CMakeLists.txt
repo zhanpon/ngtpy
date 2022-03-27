@@ -15,6 +15,8 @@ if(SKBUILD)
 endif()
 
 
+add_compile_options(-Ofast -march=native -DNDEBUG)
+
 add_subdirectory(extern/NGT EXCLUDE_FROM_ALL)
 
 find_package(pybind11 CONFIG REQUIRED)
