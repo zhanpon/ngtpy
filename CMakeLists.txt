@@ -14,6 +14,13 @@ if(SKBUILD)
   list(APPEND CMAKE_PREFIX_PATH "${_tmp_dir}")
 endif()
 
+# Enable this option if you want to build wheels for PyPI
+if(PORTABLE_WHEEL)
+  set(NGT_MARCH_NATIVE_DISABLED, ON)
+  set(NGT_AVX_DISABLED ON)
+else()
+  add_compile_options(-Ofast -march=native -DNDEBUG)
+endif()
 
 add_subdirectory(extern/NGT EXCLUDE_FROM_ALL)
 
