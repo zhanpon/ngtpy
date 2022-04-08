@@ -19,7 +19,7 @@ if(PORTABLE_WHEEL)
   set(NGT_MARCH_NATIVE_DISABLED, ON)
   set(NGT_AVX_DISABLED ON)
 else()
-  message(STATUS "Building ngtpy for local installation")
+  message(STATUS "Building optimized ngtpy for local installation")
   # Use same compiler options as NGT
   add_compile_options(-Ofast -march=native -DNDEBUG)
 endif()
