@@ -9,6 +9,8 @@ on:
   release:
     types:
       - published
+env:
+  SKBUILD_CONFIGURE_OPTIONS: -DPORTABLE_WHEEL=ON
 
 jobs:
   build_sdist:
